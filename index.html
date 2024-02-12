@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>♥ Kierrez Zer My Mobia ♥</title>
+  <style>
+    .body {
+      background-color: rgb(128, 0, 85);
+      text-align: center;
+    }
+
+    .body__title {
+      color: white;
+    }
+
+    .body__img {
+      width: 80%;
+      max-width: 512px;
+      border-radius: 15%;
+    }
+  </style>
+</head>
+
+<body class="body">
+  <h1 class="body__title">♥ Le gustaria ser mi san valentin? ♥</h1>
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiH9zCR-1PhnCma3G1Zysy8iV-E9lGiHHRfPrNiRLb8jVjJ85Lt4xe2tlrmpQkqBthbuvIyyZnWnuh2kR5Br0opuHu6IZYfAJVx8c8C1oWC72G9Ixdiw8cnF2IZtz3aCHsRzghSG8stPOLJcbfKMnhV_1piCsdh37x0NC2bZ14xCj80nBvN9bXcxqmdNUU/w374-h562/invitacion%20sadith.png" alt="Foto D My" class="body__img" />
+  <br>
+  <button id="yes">Si pofavo 👉👈</button>
+  <button id="no">NO!</button>
+
+  <script>
+    const vuttonSi = document.getElementById('yes');
+    const vuttonNo = document.getElementById('no');
+
+    const zomosNobios = () => {
+      alert('respuesta acertada!');
+      alert('elegiste la mejor opcion :D');
+      location.href = 'https://music.youtube.com/watch?v=Wv_9GWpjEaw';
+    };
+
+    const ebitarKCRompaMyBobo = () => {
+      vuttonNo.style.position = 'absolute';
+      vuttonNo.style.top = (Math.random() * window.innerHeight + 'px');
+      vuttonNo.style.left = (Math.random() * window.innerWidth + 'px');
+    };
+
+    vuttonSi.addEventListener('click', zomosNobios);
+    vuttonNo.addEventListener('mouseover', ebitarKCRompaMyBobo);
+  </script>
+</body>
+
+</html>
